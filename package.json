@@ -1,0 +1,41 @@
+{
+  "name": "ex-rail",
+  "version": "1.0.0",
+  "description": "An api for expenses tracking app.",
+  "main": "app",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=5000"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.33.0",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "googleapis": "^105.0.0",
+    "helmet": "^6.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.5",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.0",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "jest": "^29.4.3",
+    "supertest": "^6.3.3"
+  }
+}
